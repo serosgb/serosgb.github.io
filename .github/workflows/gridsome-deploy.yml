@@ -14,10 +14,11 @@ jobs:
               with:
                   persist-credentials: false
 
-            - name: Installing Packages And Building Site 🔧
-              run: |
-                  npm install
-                  npm run deploy
+            - name: Installing Packages 🔧
+              run: npm install
+
+            - name: Building Site 🔧
+              run: npm run deploy
 
             - name: Deploy to GitHub Pages  🚀
               uses: JamesIves/github-pages-deploy-action@3.7.1
