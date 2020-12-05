@@ -14,6 +14,11 @@ jobs:
               with:
                   persist-credentials: false
 
+            - name: Verifying versions 🔧
+              run: |
+                  node -v                  
+                  npm -v
+
             - name: Installing Packages 🔧
               run: npm install
 
